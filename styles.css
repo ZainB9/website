@@ -43,7 +43,7 @@ body {
   text-align: inherit;
   max-width: 43.75rem;
   margin: 0 0 1rem 0;
-  color: var(--headerColor);
+  color: var(--bodyTextColorWhite);
   position: relative;
 }
 
@@ -53,238 +53,229 @@ body {
   text-align: inherit;
   width: 100%;
   max-width: 40.625rem;
+  margin: 0 0 1rem 0;
+  color: var(--bodyTextColorWhite);
+}
+
+.cs-button-solid {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #fff;
+  background-color: var(--primary);
+  padding: 0 1.5rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.cs-button-solid:hover {
+  background-color: #000;
+}
+
+#meet-team-1765,
+#project-details {
+  padding: var(--sectionPadding);
+  background-color: #1a1a1a;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cs-container {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(3rem, 6.5vw, 4rem);
+}
+
+.cs-content {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cs-card-group {
+  width: 100%;
   margin: 0;
-  color: var(--bodyTextColor);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  position: relative;
 }
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #meet-team-1765 {
-      padding: var(--sectionPadding);
-      background-color: #1a1a1a;
-      position: relative;
-      z-index: 1;
-      overflow: hidden;
-  }
-  #meet-team-1765 .cs-container {
-      width: 100%;
-      max-width: 80rem;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: clamp(3rem, 6.5vw, 4rem);
-  }
-  #meet-team-1765 .cs-content {
-      text-align: left;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  #meet-team-1765 .cs-flex-wrapper {
-      max-width: 37.5rem;
-      display: contents;
-  }
-  #meet-team-1765 .cs-title {
-      margin-bottom: clamp(1rem, 3vw, 2rem);
-      color: var(--bodyTextColorWhite);
-  }
-  #meet-team-1765 .cs-wrapper {
-      max-width: 39.5rem;
-  }
-  #meet-team-1765 .cs-button-solid {
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-      text-align: center;
-      text-decoration: none;
-      min-width: 9.375rem;
-      margin: 2rem 0 0 0;
-      padding: 0 1.5rem;
-      color: #fff;
-      background-color: var(--primary);
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      transition: all 0.3s ease;
-  }
-  #meet-team-1765 .cs-button-solid:hover {
-      background-color: #000;
-  }
-  #meet-team-1765 .cs-ul {
-      max-width: 39.375rem;
-      margin: 0 0 2rem 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-  }
-  #meet-team-1765 .cs-li {
-      font-size: var(--bodyFontSize);
-      list-style: none;
-      line-height: 1.5em;
-      width: 100%;
-      color: var(--bodyTextColorWhite);
-      opacity: 0.8;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 0.5rem;
-  }
-  #meet-team-1765 .cs-check-icon {
-      width: 1.5rem;
-      height: auto;
-      margin-top: 1px;
-      display: block;
-  }
-  #meet-team-1765 .cs-card-group {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 1.5rem;
-      position: relative;
-  }
-  #meet-team-1765 .cs-item {
-      list-style: none;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      gap: clamp(1rem, 2vw, 1.25rem);
-      position: relative;
-  }
-  #meet-team-1765 .cs-image-group {
-      width: 100%;
-      height: auto;
-      margin: 0;
-      position: relative;
-      z-index: 1;
-      aspect-ratio: 0.91691395;
-  }
-  #meet-team-1765 .cs-picture {
-      width: 100%;
-      height: 100%;
-      aspect-ratio: 328/260;
-      background-color: #000;
-      display: block;
-      position: relative;
-      overflow: hidden;
-  }
-  #meet-team-1765 .cs-picture img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: transform 0.7s, opacity 0.3s;
-  }
-  #meet-team-1765 .cs-social {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 0.5rem;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      z-index: 1;
-  }
-  #meet-team-1765 .cs-link {
-      width: 2.5rem;
-      height: 2.5rem;
-      padding: 0.5rem;
-      background-color: #F7F7F7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transform: translateY(-1rem);
-      transition: transform 0.6s, opacity 0.6s;
-  }
-  #meet-team-1765 .cs-item:hover .cs-link {
-      opacity: 1;
-      transform: translateY(0);
-  }
-  #meet-team-1765 .cs-icon {
-      width: 1.25rem;
-      height: auto;
-      display: block;
-  }
-  #meet-team-1765 .cs-info {
-      width: 100%;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-      transition: background-color 0.3s;
-  }
-  #meet-team-1765 .cs-name {
-      font-size: 1.25rem;
-      font-weight: 700;
-      line-height: 1.2em;
-      text-transform: uppercase;
-      margin: 0;
-      color: var(--bodyTextColorWhite);
-      display: block;
-      transition: color 0.3s;
-  }
-  #meet-team-1765 .cs-job {
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 1.2em;
-      margin: 0;
-      color: var(--bodyTextColorWhite);
-      opacity: 0.8;
-      display: block;
-      transition: color 0.3s;
-  }
+.cs-item {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.25rem);
+  position: relative;
 }
 
-/* Tablet - 768px */
+.cs-image-group {
+  width: 100%;
+  height: auto;
+  margin: 0 0 1rem 0;
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.cs-picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.6s;
+}
+
+.cs-item:hover .cs-picture img {
+  transform: scale(1.1);
+}
+
+.cs-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.cs-link {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.cs-link:hover {
+  background-color: var(--primary);
+}
+
+.cs-icon {
+  width: 1.25rem;
+  height: auto;
+  display: block;
+}
+
+.cs-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cs-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  color: var(--bodyTextColorWhite);
+  display: block;
+  transition: color 0.3s;
+}
+
+.cs-name:hover {
+  color: var(--primary);
+}
+
+.cs-job {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 0;
+  color: var(--bodyTextColorWhite);
+  opacity: 0.8;
+  display: block;
+}
+
+/* Project Details Page Styles */
+#project-details .cs-content {
+  align-items: center;
+  text-align: center;
+}
+
+#project-details .cs-image-group {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+#project-details .cs-text-group {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#project-details h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: var(--bodyTextColorWhite);
+}
+
+#project-details ul {
+  margin: 0 0 2rem 1.5rem;
+  padding: 0;
+}
+
+#project-details li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Styles */
 @media only screen and (min-width: 48rem) {
-  #meet-team-1765 .cs-container {
-      max-width: 107.5rem;
-      gap: clamp(3rem, 6vw, 4rem);
-  }
-  #meet-team-1765 .cs-content {
-      text-align: left;
-      max-width: 80rem;
-      height: auto;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 3rem;
-  }
-  #meet-team-1765 .cs-flex-wrapper {
-      width: 40vw;
-      display: block;
-      flex: none;
-  }
-  #meet-team-1765 .cs-ul {
-      margin: 0;
-  }
-  #meet-team-1765 .cs-card-group {
+  .cs-card-group {
       grid-template-columns: repeat(2, 1fr);
       gap: 2.5rem;
   }
+
+  #project-details .cs-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+  }
+
+  #project-details .cs-button-solid {
+      align-self: flex-start;
+  }
 }
 
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #meet-team-1765 .cs-ul {
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-  #meet-team-1765 .cs-li {
-      width: 48%;
-  }
-  #meet-team-1765 .cs-card-group {
+@media only screen and (min-width: 64rem) {
+  .cs-card-group {
       grid-template-columns: repeat(3, 1fr);
   }
 }
